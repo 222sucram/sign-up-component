@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --gray-blue: hsl(246, 25%, 77%);
+}
+
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--red);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-main {
+    width: 75vw;
+    display: flex;
+    margin: auto;
+    gap: 50px;
+}
+
