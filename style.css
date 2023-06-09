@@ -24,8 +24,46 @@ body {
 
 .container-main {
     width: 75vw;
-    display: flex;
+    height: 75vh;
     margin: auto;
+    display: flex;
+    align-items: center;
     gap: 50px;
 }
 
+.container-right{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-form {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+}
+.container-form button{
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-offer {
+    width: 100%;
+    color: white;
+    background-color: var(--blue);
+    padding: 0.7em 0;
+    border-radius: 10px;
+    border: 0;
+}
