@@ -51,6 +51,10 @@ body {
     box-shadow: 0 7px rgba(0, 0, 0, 0.1);
 }
 
+.btn-offer span {
+    font-weight: 700;
+}
+
 .container-form {
     height: 90%;
     width: 100%;
@@ -104,6 +108,12 @@ form {
     background-color: var(--green);
     border: none;
     border-radius: 10px;
+    border-bottom: 5px solid hsl(154, 64%, 30%);
+}
+
+.btn-trial:hover {
+    cursor: pointer;
+    background-color: hsl(154, 85%, 64%);;
 }
 
 .container-left {
@@ -116,4 +126,33 @@ form {
 .container-left h1 {
     font-weight: 700;
     font-size: 2.5em;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        height: 150vh;
+        overflow-y: scroll;
+    }
+
+   .container-main{
+    flex-direction: column;
+    justify-content: space-around;
+   }
+
+   .container-right {
+    width: 100vw;
+    max-width: 100%;
+   }
+
+   .container-left {
+    text-align: center;
+   }
+
+   .container-form button {
+    height: 5em;
+   }
+
+   .container-form input {
+    padding: 0 5px;
+   }
 }
