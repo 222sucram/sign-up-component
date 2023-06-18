@@ -34,18 +34,31 @@
         </button>
         
       <div class="container-form">
-        <form>
-          <input type="text" name="first-name" id="first-name" placeholder="First name" required>
-          <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
-          <input type="email" name="email" id="email" placeholder="E-mail address" required>
-          <input type="password" name="password" id="password" placeholder="Password" required>
+        <form class="form-signup">
+          <p class="form-element">
+            <input type="text" name="first-name" id="first-name" placeholder="First name" class="input-form" required> 
+            <span class="error name-first">aaaaa</span>
+          </p>
+          <p class="form-element">
+            <input type="text" name="last-name" id="last-name" placeholder="Last name" class="input-form" required>
+            <span class="error name-last">aaaaa</span>
+          </p>
+         <p class="form-element email">
+          <input type="email" name="email" id="email" placeholder="E-mail address" class="input-form" required>
+          <span class="error email">aaaaaaa</span>
+         </p>
+         <p class="form-element password">
+          <input type="password" name="password" id="password" placeholder="Password" class="input-form" minlength="8" required>
+          <span class="error password">aaaaaa</span>
+         </p>
           <button class="btn-trial">
-            CLAIM YOUR FREE TRIAL.
+            CLAIM YOUR FREE TRIAL
           </button>
             <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         </form>
       </div>
      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
