@@ -108,10 +108,14 @@ body {
 }
 
 .container-form span {
-    margin-left: 80%;
+    margin-left: 30%;
     font-size: 12px;
     font-weight: 600;
     color: var(--red);
+}
+
+.error.password {
+    margin-left: 5%;
 }
 
 form {

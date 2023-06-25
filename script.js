@@ -1,24 +1,51 @@
 const inputForm = document.querySelectorAll(".input-form")
 const submitForm = document.querySelector(".btn-trial")
-const errorMsgForm = document.querySelectorAll(".error")
+const errorMsgForm = [...document.querySelectorAll(".error")]
+
 
 inputForm.forEach((input) => {
     input.addEventListener("input", (e) => {
-        if(input.validity.valid) {
-            input.classList.add("valid")
+        if(e.target.validity.valid) {
+            input.classList.remove("invalid")
+            input.classList.add("valid") 
+
+            if(e.target.classList.contains("first")) {
+                errorMsgForm[0].textContent = ""
+            }
+            if(e.target.classList.contains("last")) {
+                errorMsgForm[1].textContent = ""
+            }
+            if(e.target.classList.contains("email")) {
+                errorMsgForm[2].textContent = ""
+            }
+            if(e.target.classList.contains("password")) {
+                errorMsgForm[3].textContent = ""
+            }
         }
         if(!input.validity.valid) {
+            input.classList.remove("valid")
             input.classList.add("invalid")
-            errorMsgForm.forEach((err) => {
-                if(!input.validity.valid && err.classList.contains("password")) {
-                    err.textContent = "21345"
-                }
-            })
+
+            if(e.target.classList.contains("first")) {
+                errorMsgForm[0].textContent = "Please enter your first name."
+            }
+            if(e.target.classList.contains("last")) {
+                errorMsgForm[1].textContent = "Please enter your last name."
+            }
+            if(e.target.classList.contains("email")) {
+                errorMsgForm[2].textContent = "Please enter a valid email."
+            }
+            if(e.target.classList.contains("password")) {
+                errorMsgForm[3].textContent = "Enter a password with at least 8 characters."
+            }
         }
     })
 })
 
-// loop over form els
-// add eventlistener for input
-// check validity of each input
-// 
+submitForm.addEventListener("click", (e) => {
+    e.preventDefault()
+  
+    inputForm.forEach((input) => {
+        
+    })
+})
