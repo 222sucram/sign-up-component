@@ -46,6 +46,7 @@ body {
 .container-right{
     height: 100%;
     display: flex;
+    margin-bottom: 7vh;
     flex-wrap: wrap;
     max-width: 50%;
     justify-content: center;
