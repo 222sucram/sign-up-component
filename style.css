@@ -114,6 +114,11 @@ body {
     color: var(--red);
 }
 
+#terms {
+    margin: 0;
+    font-weight: 700;
+}
+
 .error.password {
     margin-left: 5%;
 }
